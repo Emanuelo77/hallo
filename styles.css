@@ -1,3 +1,34 @@
+.container {
+    display: inline-grid;
+    grid-template-rows: 40px 40px 40px 40px 40px;
+    grid-template-columns: 40px 40px 40px 40px 40px;
+    background-color: lightblue;
+    grid-template-areas:
+    "wohnzimmer wohnzimmer wohnzimmer wohnzimmer wohnzimm
+    er"
+    "wohnzimmer wohnzimmer wohnzimmer wohnzimmer wohnzimm
+    er"
+    "schlafzimmer schlafzimmer badezimmer küche küche"
+    "schlafzimmer schlafzimmer badezimmer küche küche"
+    "schrank schrank badezimmer küche küche";
+    }
+    .raum {
+    border: 1px solid;
+    font-size: 50%;
+    text-align: center;
+    }
+    #wohnzimmer {
+    grid-area: wohnzimmer;
+    }
+    #küche {
+    grid-area: küche;
+    }
+    #schlafzimmer {
+    grid-area: schlafzimmer;
+    }
+    #badezimmer {
+    grid-area: badezimmer;
+    }
 body,
 html {
 height: 100%;
